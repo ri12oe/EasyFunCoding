@@ -1,0 +1,25 @@
+{
+  "name": "easyfuncoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ri12oe/EasyFunCoding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ri12oe/EasyFunCoding/issues"
+  },
+  "homepage": "https://github.com/ri12oe/EasyFunCoding#readme",
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}
