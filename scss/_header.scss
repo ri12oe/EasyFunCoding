@@ -42,7 +42,7 @@ header {
         text-decoration: none;
         font-weight: $primary-weight;
         font-size: 14px;
-        color: black;
+        color: $primary-color;
         &:hover {
           opacity: 0.7;
         }
