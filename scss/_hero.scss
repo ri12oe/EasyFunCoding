@@ -1,0 +1,83 @@
+.hero-img {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/heroImg.jpg);
+  max-width: 100%;
+  min-height: 943px;
+  margin: 0 auto;
+  transform: scaleX(-1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-content {
+    transform: scaleX(-1);
+    .hero-subcontent {
+      padding-top: 201px;
+      display: flex;
+      flex-direction: column;
+      max-width: 528px;
+      min-height: 400px;
+      color: white;
+      gap: 12px;
+      .hero-subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        color: #f2911c;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        width: fit-content;
+      }
+      .hero-title {
+        font-weight: 900;
+        font-size: 88px;
+        line-height: 80.96px;
+        letter-spacing: 2.2px;
+        color: white;
+        span {
+            color: #f2911c !important; 
+        }
+      }
+      .hero-descp {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29.25px;
+        letter-spacing: 0px;
+      }
+      .hero-buttons {
+        display: flex;
+        gap: 15px;
+        .hero-fill-btn {
+          background-color: #4862ad;
+          color: white !important;
+          border-radius: $primary-radius;
+          padding: 12px 24px;
+          font-weight: $primary-weight;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.31px;
+          text-decoration: none;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .hero-outline-btn {
+          color: white !important;
+          border-radius: $primary-radius;
+          padding: 12px 24px;
+          font-weight: $primary-weight;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.31px;
+          text-decoration: none;
+          border: 1px solid white;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
