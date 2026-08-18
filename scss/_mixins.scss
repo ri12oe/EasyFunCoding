@@ -1,1 +1,47 @@
+// SubTitle
+@mixin subtitle($color-txt) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: $color-txt;
+}
 
+// Buttons
+// Primary Button
+@mixin primary-button($color-txt) {
+  background-color: $color-txt;
+  color: white !important;
+  border-radius: $primary-radius;
+  padding: 12px 24px;
+  font-weight: $primary-weight;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.31px;
+  text-decoration: none;
+}
+
+// Outline Button
+@mixin outline-button($color-txt) {
+  color: $color-txt !important;
+  border-radius: $primary-radius;
+  padding: 12px 24px;
+  font-weight: $primary-weight;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.31px;
+  text-decoration: none;
+  border: 1px solid $white-color;
+}
+
+// Text
+
+// Descp
+@mixin descp($color-txt) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: $color-txt;
+}

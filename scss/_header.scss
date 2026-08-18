@@ -55,15 +55,7 @@ header {
       gap: 24px;
       cursor: pointer;
       .header-button {
-        background-color: $primary-color;
-        color: $white-color !important;
-        border-radius: $primary-radius;
-        padding: 12px 24px;
-        font-weight: $primary-weight;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.31px;
-        text-decoration: none;
+        @include primary-button($primary-color);
         &:hover {
           opacity: 0.7;
         }

@@ -20,12 +20,7 @@
       color: $white-color;
       gap: 12px;
       .hero-subtitle {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 3.6px;
-        text-transform: uppercase;
-        color: $primary-color;
+        @include subtitle($primary-color);
         border-bottom: 1px solid $white-color;
         padding-bottom: 10px;
         width: fit-content;
@@ -41,38 +36,19 @@
         }
       }
       .hero-descp {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 29.25px;
-        letter-spacing: 0px;
+        @include descp($white-color);
       }
       .hero-buttons {
         display: flex;
         gap: 15px;
         .hero-fill-btn {
-          background-color: $primary-color;
-          color: white !important;
-          border-radius: $primary-radius;
-          padding: 12px 24px;
-          font-weight: $primary-weight;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: -0.31px;
-          text-decoration: none;
+          @include primary-button($primary-color);
           &:hover {
             opacity: 0.7;
           }
         }
         .hero-outline-btn {
-          color: $white-color !important;
-          border-radius: $primary-radius;
-          padding: 12px 24px;
-          font-weight: $primary-weight;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: -0.31px;
-          text-decoration: none;
-          border: 1px solid $white-color;
+          @include outline-button($white-color);
           &:hover {
             opacity: 0.7;
           }

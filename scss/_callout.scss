@@ -1,0 +1,35 @@
+.callout {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .callout-img {
+        width: 528px;
+        height: 396px;
+        background-image: url(../images/callout.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 14px;
+    }
+    .callout-subcontent {
+        max-width: 528px;
+        min-height: 200px;
+        margin-top: 0;
+        // background-color: blue;
+        .callout-title {
+            @include subtitle($primary-color);
+            font-size: 16px;
+        }
+        .callout-descp {
+            @include descp(black);
+            font-size: 12px;
+        }
+        .callout-btn {
+            @include primary-button($primary-color);
+        }
+        
+    }
+}
