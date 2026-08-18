@@ -2,7 +2,7 @@ header {
   min-height: 93px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $white-color;
   nav {
     max-width: 1200px;
     display: flex;
@@ -55,8 +55,8 @@ header {
       gap: 24px;
       cursor: pointer;
       .header-button {
-        background-color: #4862ad;
-        color: white !important;
+        background-color: $primary-color;
+        color: $white-color !important;
         border-radius: $primary-radius;
         padding: 12px 24px;
         font-weight: $primary-weight;
