@@ -21,11 +21,11 @@
         // background-color: blue;
         .callout-title {
             @include subtitle($primary-color);
-            font-size: 16px;
+            font-size: 12px;
         }
         .callout-descp {
             @include descp(black);
-            font-size: 12px;
+            font-size: 16px;
         }
         .callout-btn {
             @include primary-button($primary-color);

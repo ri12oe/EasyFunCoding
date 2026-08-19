@@ -124,6 +124,7 @@ header nav .header-buttons svg:hover {
   padding-top: 201px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 528px;
   min-height: 400px;
   color: #E7E5E4;
@@ -200,6 +201,7 @@ header nav .header-buttons svg:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .stats-wrapper .stats-content .stats-card {
   display: flex;
@@ -258,7 +260,7 @@ header nav .header-buttons svg:hover {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #4862ad;
-  font-size: 16px;
+  font-size: 12px;
 }
 .callout .callout-subcontent .callout-descp {
   font-weight: 400;
@@ -266,7 +268,7 @@ header nav .header-buttons svg:hover {
   line-height: 29.25px;
   letter-spacing: 0px;
   color: black;
-  font-size: 12px;
+  font-size: 16px;
 }
 .callout .callout-subcontent .callout-btn {
   background-color: #4862ad;
@@ -278,4 +280,132 @@ header nav .header-buttons svg:hover {
   line-height: 24px;
   letter-spacing: -0.31px;
   text-decoration: none;
+}
+
+.learning-wrapper {
+  background-color: #4862ad;
+}
+.learning-wrapper .learning {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.learning-wrapper .learning .learning-subcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+.learning-wrapper .learning .learning-subcontent .learning-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #E7E5E4;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.learning-wrapper .learning .learning-subcontent .learning-desp {
+  font-weight: 600;
+  font-size: 36px;
+  color: #E7E5E4;
+}
+.learning-wrapper .learning .learning-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.learning-wrapper .learning .learning-cards .learning-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 426px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1056px;
+  min-height: 396px;
+  margin: 0 auto;
+  background-color: #E7E5E4;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-img {
+  width: 100%;
+  min-height: 396px;
+  background-image: url(../images/inPerson.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-img2 {
+  width: 100%;
+  min-height: 396px;
+  background-image: url(../images/summer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  padding: 44px 48px;
+  box-sizing: border-box;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent .card-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #4862ad;
+  margin: 0;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent .card-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4862ad;
+  margin: 0;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent .card-descp {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: #4862ad;
+  font-size: 16px;
+  margin: 8px 0 12px;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent .card-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.learning-wrapper .learning .learning-cards .learning-card .learning-card-subcontent .card-btns .card-btn {
+  background-color: #4862ad;
+  color: white !important;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.31px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .learning-wrapper .learning .learning-card {
+    grid-template-columns: 1fr;
+  }
+  .learning-wrapper .learning .learning-card .learning-img {
+    min-height: 280px;
+    grid-row: 1;
+  }
+  .learning-wrapper .learning .learning-card .learning-card-subcontent {
+    padding: 36px 28px;
+  }
 }

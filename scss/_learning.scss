@@ -1,0 +1,109 @@
+.learning-wrapper {
+  background-color: $primary-color;
+  .learning {
+    padding-top: 92px;
+    padding-bottom: 92px;
+    .learning-subcontent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 42px;
+      .learning-title {
+        @include subtitle($white-color);
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+      .learning-desp {
+        font-weight: 600;
+        font-size: 36px;
+        color: $white-color;
+      }
+    }
+    .learning-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .learning-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 426px;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1056px;
+        min-height: 396px;
+        margin: 0 auto;
+        background-color: $white-color;
+        border-radius: 14px;
+        overflow: hidden;
+        .learning-img {
+          width: 100%;
+          min-height: 396px;
+          background-image: url(../images/inPerson.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .learning-img2 {
+          width: 100%;
+          min-height: 396px;
+          background-image: url(../images/summer.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .learning-card-subcontent {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 12px;
+          padding: 44px 48px;
+          box-sizing: border-box;
+          .card-title {
+            @include subtitle($primary-color);
+            margin: 0;
+          }
+          .card-subtitle {
+            font-weight: 600;
+            font-size: 24px;
+            color: $primary-color;
+            margin: 0;
+          }
+          .card-descp {
+            @include descp($primary-color);
+            font-size: 16px;
+            margin: 8px 0 12px;
+          }
+          .card-btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            .card-btn {
+              @include primary-button($primary-color);
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .learning-wrapper {
+    .learning {
+      .learning-card {
+        grid-template-columns: 1fr;
+        .learning-img {
+          min-height: 280px;
+          grid-row: 1;
+        }
+        .learning-card-subcontent {
+          padding: 36px 28px;
+        }
+      }
+    }
+  }
+}
