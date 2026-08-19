@@ -281,6 +281,9 @@ header nav .header-buttons svg:hover {
   letter-spacing: -0.31px;
   text-decoration: none;
 }
+.callout .callout-subcontent .callout-btn:hover {
+  opacity: 0.7;
+}
 
 .learning-wrapper {
   background-color: #4862ad;
