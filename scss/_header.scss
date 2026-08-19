@@ -69,4 +69,48 @@ header {
       }
     }
   }
+
+  @include tablet {
+    nav {
+      padding: 0 24px;
+
+      .links {
+        gap: 20px;
+      }
+    }
+  }
+
+  @include mobile {
+    min-height: auto;
+    padding: 16px 0;
+
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 0 20px;
+
+      .logo svg {
+        width: 48px;
+        height: 48px;
+      }
+
+      .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .header-buttons {
+        gap: 16px;
+
+        .header-button {
+          padding: 10px 18px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

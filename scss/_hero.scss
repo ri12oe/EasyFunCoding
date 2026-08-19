@@ -57,4 +57,50 @@
       }
     }
   }
+
+  @include tablet {
+    min-height: 760px;
+
+    .hero-content .hero-subcontent {
+      padding-top: 140px;
+      max-width: 100%;
+
+      .hero-title {
+        font-size: 56px;
+        line-height: 1.15;
+      }
+    }
+  }
+
+  @include mobile {
+    min-height: auto;
+    padding: 64px 0;
+
+    .hero-content .hero-subcontent {
+      padding-top: 0;
+      min-height: auto;
+      gap: 16px;
+
+      .hero-title {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: normal;
+      }
+
+      .hero-descp {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+
+        a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

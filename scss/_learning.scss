@@ -13,6 +13,7 @@
       .learning-title {
         @include subtitle($white-color);
         font-size: 18px;
+        line-height: 1.4;
         margin-bottom: 24px;
       }
       .learning-desp {
@@ -77,9 +78,11 @@
           }
           .card-btns {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 24px;
+            width: 100%;
             .card-btn {
               @include primary-button($primary-color);
               display: inline-block;
@@ -94,17 +97,45 @@
   }
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .learning-wrapper {
     .learning {
-      .learning-card {
+      .learning-cards .learning-card {
         grid-template-columns: 1fr;
-        .learning-img {
+        .learning-img,
+        .learning-img2 {
           min-height: 280px;
           grid-row: 1;
         }
         .learning-card-subcontent {
           padding: 36px 28px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .learning-wrapper .learning {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    .learning-subcontent .learning-desp {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .learning-cards .learning-card .learning-card-subcontent {
+      padding: 28px 20px;
+
+      .card-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+
+        .card-btn {
+          width: 100%;
+          text-align: center;
         }
       }
     }

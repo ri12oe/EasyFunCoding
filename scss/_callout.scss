@@ -1,38 +1,69 @@
 .callout {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  .callout-img {
+    width: 528px;
+    height: 396px;
+    background-image: url(../images/callout.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+  }
+  .callout-subcontent {
+    max-width: 528px;
+    min-height: 200px;
+    margin-top: 0;
+    // background-color: blue;
+    .callout-title {
+      @include subtitle($primary-color);
+      font-size: 12px;
+    }
+    .callout-descp {
+      @include descp(black);
+      font-size: 16px;
+    }
+    .callout-btn {
+      @include primary-button($primary-color);
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 32px;
+
     .callout-img {
-        width: 528px;
-        height: 396px;
-        background-image: url(../images/callout.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 14px;
+      width: 100%;
+      max-width: 528px;
+      height: 320px;
     }
+
     .callout-subcontent {
-        max-width: 528px;
-        min-height: 200px;
-        margin-top: 0;
-        // background-color: blue;
-        .callout-title {
-            @include subtitle($primary-color);
-            font-size: 12px;
-        }
-        .callout-descp {
-            @include descp(black);
-            font-size: 16px;
-        }
-        .callout-btn {
-            @include primary-button($primary-color);
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-        
+      max-width: 100%;
+      text-align: center;
     }
+
+    .callout-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  @include mobile {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .callout-img {
+      height: 240px;
+    }
+  }
 }

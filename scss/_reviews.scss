@@ -16,6 +16,8 @@
       .review-title {
         @include subtitle($primary-color);
         font-size: 24px;
+        line-height: 1.4;
+        text-align: center;
       }
       .stars-container {
         display: flex;
@@ -62,6 +64,7 @@
         }
         .stars-container {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
           gap: 16px;
           justify-content: space-between;
@@ -76,6 +79,31 @@
           }
         }
       }
+    }
+  }
+}
+
+@include tablet {
+  .review-wrapper .review {
+    padding: 60px clamp(20px, 4vw, 40px);
+
+    .review-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@include mobile {
+  .review-wrapper .review {
+    padding: 48px 20px;
+
+    .review-upper-content .stars-container {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .review-cards {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -36,4 +36,23 @@
         background-color: $white-color;
     }
   }
+
+  @include tablet {
+    .stats-content {
+      padding: 0 24px;
+    }
+  }
+
+  @include mobile {
+    .stats-content {
+      flex-direction: column;
+      gap: 24px;
+      padding: 32px 24px;
+
+      .divider {
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
 }

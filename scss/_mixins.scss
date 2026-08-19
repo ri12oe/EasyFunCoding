@@ -45,3 +45,16 @@
   letter-spacing: 0px;
   color: $color-txt;
 }
+
+// Breakpoints
+@mixin tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
