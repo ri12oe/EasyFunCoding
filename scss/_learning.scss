@@ -83,6 +83,9 @@
             .card-btn {
               @include primary-button($primary-color);
               display: inline-block;
+              &:hover {
+                opacity: 0.7;
+              }
             }
           }
         }
