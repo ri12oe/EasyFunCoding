@@ -1,0 +1,81 @@
+.review-wrapper {
+  background-color: $primary-color;
+  padding: 40px 0;
+  .review {
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    padding: 80px clamp(24px, 4vw, 48px);
+    border-radius: 14px;
+    background-color: $white-color;
+    .review-upper-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 32px;
+      .review-title {
+        @include subtitle($primary-color);
+        font-size: 24px;
+      }
+      .stars-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .stars-content {
+          display: flex;
+          gap: 4px;
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .review-mark {
+          @include descp($primary-color);
+          font-size: 24px;
+          margin-bottom: 0;
+          white-space: nowrap;
+          span {
+            font-size: 18px;
+            color: black;
+          }
+        }
+      }
+    }
+    .review-cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      .review-card {
+        min-height: 220px;
+        background-color: white;
+        border-radius: 14px;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 42px;
+        .reivew-qutoe {
+          @include descp(black);
+          font-size: 24px;
+          margin-bottom: 24px;
+          
+        }
+        .stars-container {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          justify-content: space-between;
+          width: 100%;
+          .stars-content {
+            display: flex;
+            gap: 4px;
+          }
+          .name {
+            margin-bottom: 0;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

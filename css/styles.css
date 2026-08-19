@@ -483,3 +483,97 @@ header nav .header-buttons svg:hover {
 .callout-2 .callout2-cards .callout2-card .card-btn:hover {
   opacity: 0.7;
 }
+
+.review-wrapper {
+  background-color: #4862ad;
+  padding: 40px 0;
+}
+.review-wrapper .review {
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  padding: 80px clamp(24px, 4vw, 48px);
+  border-radius: 14px;
+  background-color: #E7E5E4;
+}
+.review-wrapper .review .review-upper-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.review-wrapper .review .review-upper-content .review-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #4862ad;
+  font-size: 24px;
+}
+.review-wrapper .review .review-upper-content .stars-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.review-wrapper .review .review-upper-content .stars-container .stars-content {
+  display: flex;
+  gap: 4px;
+}
+.review-wrapper .review .review-upper-content .stars-container .stars-content svg {
+  width: 32px;
+  height: 32px;
+}
+.review-wrapper .review .review-upper-content .stars-container .review-mark {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: #4862ad;
+  font-size: 24px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.review-wrapper .review .review-upper-content .stars-container .review-mark span {
+  font-size: 18px;
+  color: black;
+}
+.review-wrapper .review .review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.review-wrapper .review .review-cards .review-card {
+  min-height: 220px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 42px;
+}
+.review-wrapper .review .review-cards .review-card .reivew-qutoe {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.review-wrapper .review .review-cards .review-card .stars-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+.review-wrapper .review .review-cards .review-card .stars-container .stars-content {
+  display: flex;
+  gap: 4px;
+}
+.review-wrapper .review .review-cards .review-card .stars-container .name {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
