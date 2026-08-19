@@ -1,0 +1,35 @@
+.trial {
+  padding: 24px;
+  padding-bottom: 24px;
+  width: calc(100% - 48px);
+  margin: 42px auto;
+  padding: 80px clamp(24px, 4vw, 48px);
+  background-color: $primary-color;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .trial-subcontent {
+    width: 528px;
+    .trial-title {
+      @include subtitle($white-color);
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .trial-descp {
+      @include descp($white-color);
+      font-size: 14px;
+      span {
+        color: $secondary-color;
+      }
+    }
+  }
+  .card-btn {
+    @include outline-button($white-color);
+    font-size: 32px;
+    padding: 24px 32px;
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+}
