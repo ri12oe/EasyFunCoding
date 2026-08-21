@@ -326,24 +326,137 @@
   }
 }
 
-@include mobile {
-  .instructor {
+@include tablet {
+  .about-us-wrapper {
+    .about-us-content {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      .founder-content {
+        width: min(100%, 900px);
+        padding: 0 20px;
+
+        .founder-container {
+          flex-direction: column;
+          text-align: center;
+          padding: 24px 20px;
+
+          .founder-img {
+            width: 220px;
+            height: 220px;
+          }
+
+          .founder-subcontent {
+            .founder-descp {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .instructor,
+  .computing-olympiad {
     padding-top: 60px;
     padding-bottom: 60px;
 
     .instructor-content {
       .instructor-cards {
         grid-template-columns: 1fr;
+        width: min(100%, 760px);
         gap: 18px;
+      }
+    }
+  }
+}
 
-        .instructor-card {
+@include mobile {
+  .about-us-wrapper {
+    .about-us-content {
+      padding-top: 56px;
+      padding-bottom: 56px;
+
+      .about-us-title {
+        margin-bottom: 16px;
+      }
+
+      .founder-content {
+        width: min(100%, 520px);
+        padding: 0 12px;
+
+        .founder-title {
+          font-size: 2rem;
+        }
+
+        .founder-container {
+          gap: 18px;
+          padding: 18px 16px;
+
+          .founder-img {
+            width: 180px;
+            height: 180px;
+          }
+
+          .founder-subcontent {
+            .founder-name {
+              font-size: 1.5rem;
+            }
+
+            .founder-descp {
+              font-size: 0.98rem;
+              line-height: 1.7;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .instructor,
+  .computing-olympiad {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    .instructor-content {
+      gap: 18px;
+
+      .instructor-title {
+        font-size: 1.2rem;
+        padding: 10px;
+      }
+
+      .instructor-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: min(100%, 520px);
+
+        .instructor-card,
+        .center-card {
           flex-direction: column;
           text-align: center;
-          padding: 20px 18px;
+          padding: 18px 16px;
+
+          .instructor-img,
+          .instructor-img2,
+          .instructor-img3,
+          .instructor-img4,
+          .instructor-img5,
+          .instructor-img6,
+          .instructor-img7 {
+            width: 110px;
+            height: 110px;
+          }
 
           .instructor-subcontent {
+            .instructor-name {
+              font-size: 1.4rem;
+            }
+
             .instructor-descp {
               text-align: center;
+              font-size: 0.95rem;
             }
           }
         }

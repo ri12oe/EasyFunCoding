@@ -11,7 +11,7 @@ Original: https://easyfuncoding.com/ <br>
 New (So far. Finshed Home Page): https://in-info-web4.luddy.indianapolis.iu.edu/~maespin/projects/EasyFunCoding/
 
 ## Updates
-I’ve finished building the EasyFunCoding homepage, and I’m excited to keep expanding the site—more updates coming soon.
+I’ve finished building the new Overview page, featuring all courses and our Summer Camp, along with a refreshed About Us page. Both pages now give families a clear, welcoming introduction to EasyFunCoding and what we offer.
 
 
 
