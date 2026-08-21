@@ -1443,6 +1443,18 @@ footer .footer-bottom a:hover {
   border-radius: 18px;
   margin: 14px 0 14px 14px;
 }
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-img1 {
+  background-image: url(../images/beginner-lv2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
 .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent {
   padding: 32px 46px 28px;
   display: flex;
@@ -1655,8 +1667,32 @@ footer .footer-bottom a:hover {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(10, 32, 56, 0.08);
 }
-.inter-content-wrapper .overview-item .overview-cards .overview-card .overview-img {
-  background-image: url(../images/beginner-lv1.jpg);
+.inter-content-wrapper .overview-item .overview-cards .overview-card .overview-img2 {
+  background-image: url(../images/inter-lv1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
+.inter-content-wrapper .overview-item .overview-cards .overview-card .overview-img3 {
+  background-image: url(../images/inter-lv2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
+.inter-content-wrapper .overview-item .overview-cards .overview-card .overview-img4 {
+  background-image: url(../images/inter-lv3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1879,8 +1915,32 @@ footer .footer-bottom a:hover {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(10, 32, 56, 0.08);
 }
-.advan-content-wrapper .overview-item .overview-cards .overview-card .overview-img {
-  background-image: url(../images/beginner-lv1.jpg);
+.advan-content-wrapper .overview-item .overview-cards .overview-card .overview-img5 {
+  background-image: url(../images/advn-new3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
+.advan-content-wrapper .overview-item .overview-cards .overview-card .overview-img6 {
+  background-image: url(../images/advn-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
+.advan-content-wrapper .overview-item .overview-cards .overview-card .overview-img7 {
+  background-image: url(../images/advan-3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2103,8 +2163,8 @@ footer .footer-bottom a:hover {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(10, 32, 56, 0.08);
 }
-.comp-content-wrapper .overview-item .overview-cards .overview-card .overview-img {
-  background-image: url(../images/beginner-lv1.jpg);
+.comp-content-wrapper .overview-item .overview-cards .overview-card .overview-img7 {
+  background-image: url(../images/com-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
