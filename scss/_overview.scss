@@ -1,0 +1,69 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .overview-title {
+    @include subtitle($primary-color);
+    display: block;
+    width: 100%;
+    margin: 0 0 24px;
+    text-align: center;
+    border-bottom: 1px solid $primary-color;
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
+.overview-content-wrapper {
+  background-color: $green-color;
+  .overview-item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .overview-mintitle {
+      display: block;
+      width: 100%;
+      margin: 0 0 18px;
+      font-weight: 600;
+      font-size: clamp(2.25rem, 4vw, 4.5rem);
+      line-height: 1.1;
+      color: $white-color;
+      text-align: center;
+    }
+    .overview-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 80px;
+        .overview-card {
+            background-color: $white-color;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 426px;
+            align-items: stretch;
+            width: 100%;
+            max-width: 1056px;
+            min-height: 396px;
+            margin: 0 auto;
+            border-radius: 14px;
+            overflow: hidden;
+            .overview-img {
+                background-image: url(../images/beginner-lv1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 600px;
+                border-radius: 10px;
+            }
+            .overview-subcontent {
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+      }
+  }
+}
