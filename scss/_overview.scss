@@ -306,7 +306,7 @@
       font-weight: 600;
       font-size: clamp(2.25rem, 4vw, 4.5rem);
       line-height: 1.1;
-      color: $green-color;
+      color: $yellow-color;
       background-color: white;
       padding: 12px 24px;
       border-radius: 14px;
@@ -369,14 +369,14 @@
             margin-bottom: 18px;
             padding: 10px 22px;
             border-radius: 999px;
-            background-color: $green-color;
-            @include subtitle($white-color);
+            background-color: $yellow-color;
+            @include subtitle(white);
             font-size: 14px;
           }
 
           .overview-subtitle {
             margin-bottom: 8px;
-            color: $green-color;
+            color: $yellow-color;
             font-size: clamp(2.6rem, 3.2vw, 4rem);
             line-height: 0.98;
             font-weight: 800;
@@ -403,10 +403,10 @@
               gap: 12px;
               min-height: 64px;
               padding: 12px 16px;
-              border: 2px solid $green-color;
+              border: 2px solid $yellow-color;
               border-radius: 14px;
               background: #fff;
-              color: $green-color;
+              color: $yellow-color;
               font-size: 1.15rem;
               font-weight: 700;
               text-align: center;
@@ -415,7 +415,7 @@
               svg {
                 width: 22px;
                 height: 22px;
-                fill: $green-color;
+                fill: $yellow-color;
               }
 
               .btn-content {
@@ -428,7 +428,7 @@
           .overview-build-title,
           .overview-skill-title {
             margin-bottom: 14px;
-            color: $green-color;
+            color: $yellow-color;
             font-size: clamp(1.55rem, 2vw, 2.2rem);
             line-height: 1.2;
             font-weight: 800;
@@ -466,7 +466,7 @@
               svg {
                 width: 22px;
                 height: 22px;
-                fill: $green-color;
+                fill: $yellow-color;
               }
             }
 
@@ -492,7 +492,7 @@
               min-height: 92px;
               padding: 16px 18px;
               border-radius: 14px;
-              background: linear-gradient(135deg, $green-color, $green-color);
+              background: linear-gradient(135deg, $yellow-color, $yellow-color);
               color: #fff;
               text-align: center;
               font-size: clamp(1.08rem, 1.2vw, 1.5rem);
@@ -514,7 +514,7 @@
             min-height: 76px;
             padding: 18px 20px;
             border-radius: 16px;
-            background: $green-color;
+            background: $yellow-color;
             color: #fff;
             font-size: clamp(1.25rem, 1.8vw, 2.05rem);
             line-height: 1.2;
