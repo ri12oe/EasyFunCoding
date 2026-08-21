@@ -1399,7 +1399,12 @@ footer .footer-bottom a:hover {
   font-weight: 600;
   font-size: clamp(2.25rem, 4vw, 4.5rem);
   line-height: 1.1;
-  color: #E7E5E4;
+  color: #43B549;
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  width: fit-content;
+  margin: 0 auto;
   text-align: center;
 }
 .overview-content-wrapper .overview-item .overview-cards {
