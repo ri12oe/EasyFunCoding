@@ -104,6 +104,7 @@
             line-height: 0.98;
             font-weight: 800;
             letter-spacing: -0.06em;
+            margin-bottom: 24px;
           }
 
           .overview-age {
@@ -214,7 +215,7 @@
               min-height: 92px;
               padding: 16px 18px;
               border-radius: 14px;
-              background: linear-gradient(135deg, $green-color, #2e86c9);
+              background: linear-gradient(135deg, $green-color, $green-color);
               color: #fff;
               text-align: center;
               font-size: clamp(1.08rem, 1.2vw, 1.5rem);
