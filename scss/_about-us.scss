@@ -187,6 +187,102 @@
   }
 }
 
+.computing-olympiad {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .instructor-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    .instructor-title {
+      @include subtitle($primary-color);
+      margin: 0;
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid $primary-color;
+      width: fit-content;
+      padding: 12px;
+    }
+
+    .instructor-cards {
+      width: min(100%, 1200px);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+
+      .instructor-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 22px 24px;
+        background: rgba(72, 98, 173, 0.04);
+        border: 1px solid rgba(72, 98, 173, 0.12);
+        border-radius: 18px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+
+        .instructor-img5 {
+          flex-shrink: 0;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-image: url(../images/comput-1.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 4px solid rgba(72, 98, 173, 0.12);
+        }
+        .instructor-img6 {
+          flex-shrink: 0;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-image: url(../images/comput-2.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 4px solid rgba(72, 98, 173, 0.12);
+        }
+        .instructor-img7 {
+          flex-shrink: 0;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-image: url(../images/comput-3.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 4px solid rgba(72, 98, 173, 0.12);
+        }
+
+        .instructor-subcontent {
+          flex: 1;
+          min-width: 0;
+
+          .instructor-name {
+            margin: 0 0 8px;
+            font-size: 1.75rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $primary-color;
+          }
+
+          .instructor-descp {
+            margin: 0;
+            @include descp($primary-color);
+            font-size: 1rem;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include mobile {
   .instructor {
     padding-top: 60px;
