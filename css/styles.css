@@ -985,3 +985,208 @@ footer .footer-bottom a:hover {
     gap: 12px;
   }
 }
+.about-us-wrapper {
+  background-color: #4862ad;
+}
+.about-us-wrapper .about-us-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-wrapper .about-us-content .about-us-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #E7E5E4;
+  display: block;
+  width: 100%;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.about-us-wrapper .about-us-content .founder-content {
+  width: min(100%, 1200px);
+}
+.about-us-wrapper .about-us-content .founder-content .founder-title {
+  display: block;
+  width: 100%;
+  margin: 0 0 18px;
+  font-weight: 600;
+  font-size: clamp(2.25rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  color: #E7E5E4;
+  text-align: center;
+}
+.about-us-wrapper .about-us-content .founder-content .founder-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  padding: 28px 30px;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+.about-us-wrapper .about-us-content .founder-content .founder-container .founder-img {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: url(../images/founder.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid rgba(72, 98, 173, 0.12);
+}
+.about-us-wrapper .about-us-content .founder-content .founder-container .founder-subcontent {
+  flex: 1;
+}
+.about-us-wrapper .about-us-content .founder-content .founder-container .founder-subcontent .founder-name {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #4862ad;
+  border-bottom: 1px solid #4862ad;
+  width: fit-content;
+}
+.about-us-wrapper .about-us-content .founder-content .founder-container .founder-subcontent .founder-descp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: #4862ad;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.instructor {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.instructor .instructor-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.instructor .instructor-content .instructor-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #4862ad;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+}
+.instructor .instructor-content .instructor-cards {
+  width: min(100%, 1200px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.instructor .instructor-content .instructor-cards .instructor-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  background: rgba(72, 98, 173, 0.04);
+  border: 1px solid rgba(72, 98, 173, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-img {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../images/instructor.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid rgba(72, 98, 173, 0.12);
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-img2 {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../images/instructor-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid rgba(72, 98, 173, 0.12);
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-img3 {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../images/instructor-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid rgba(72, 98, 173, 0.12);
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-img4 {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../images/instructor-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid rgba(72, 98, 173, 0.12);
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-subcontent {
+  flex: 1;
+  min-width: 0;
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-subcontent .instructor-name {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #4862ad;
+}
+.instructor .instructor-content .instructor-cards .instructor-card .instructor-subcontent .instructor-descp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: 0px;
+  color: #4862ad;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .instructor {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .instructor .instructor-content .instructor-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .instructor .instructor-content .instructor-cards .instructor-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 18px;
+  }
+  .instructor .instructor-content .instructor-cards .instructor-card .instructor-subcontent .instructor-descp {
+    text-align: center;
+  }
+}
