@@ -1839,7 +1839,7 @@ footer .footer-bottom a:hover {
 }
 
 .advan-content-wrapper {
-  background-color: #FBCD08;
+  background-color: #f2911c;
   padding: 24px 24px 80px;
 }
 .advan-content-wrapper .overview-item {
@@ -1854,7 +1854,7 @@ footer .footer-bottom a:hover {
   font-weight: 600;
   font-size: clamp(2.25rem, 4vw, 4.5rem);
   line-height: 1.1;
-  color: #43B549;
+  color: #f2911c;
   background-color: white;
   padding: 12px 24px;
   border-radius: 14px;
@@ -1913,7 +1913,7 @@ footer .footer-bottom a:hover {
   margin-bottom: 18px;
   padding: 10px 22px;
   border-radius: 999px;
-  background-color: #43B549;
+  background-color: #f2911c;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
@@ -1924,7 +1924,7 @@ footer .footer-bottom a:hover {
 }
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-subtitle {
   margin-bottom: 8px;
-  color: #43B549;
+  color: #f2911c;
   font-size: clamp(2.6rem, 3.2vw, 4rem);
   line-height: 0.98;
   font-weight: 800;
@@ -1950,10 +1950,10 @@ footer .footer-bottom a:hover {
   gap: 12px;
   min-height: 64px;
   padding: 12px 16px;
-  border: 2px solid #43B549;
+  border: 2px solid #f2911c;
   border-radius: 14px;
   background: #fff;
-  color: #43B549;
+  color: #f2911c;
   font-size: 1.15rem;
   font-weight: 700;
   text-align: center;
@@ -1962,7 +1962,7 @@ footer .footer-bottom a:hover {
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons .overview-outline-button svg {
   width: 22px;
   height: 22px;
-  fill: #43B549;
+  fill: #f2911c;
 }
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons .overview-outline-button .btn-content {
   margin-bottom: 0;
@@ -1971,7 +1971,7 @@ footer .footer-bottom a:hover {
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-build-title,
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-skill-title {
   margin-bottom: 14px;
-  color: #43B549;
+  color: #f2911c;
   font-size: clamp(1.55rem, 2vw, 2.2rem);
   line-height: 1.2;
   font-weight: 800;
@@ -2005,7 +2005,7 @@ footer .footer-bottom a:hover {
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-icon svg {
   width: 22px;
   height: 22px;
-  fill: #43B549;
+  fill: #f2911c;
 }
 .advan-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-text {
   color: rgba(29, 42, 93, 0.96);
@@ -2027,7 +2027,7 @@ footer .footer-bottom a:hover {
   min-height: 92px;
   padding: 16px 18px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #43B549, #43B549);
+  background: linear-gradient(135deg, #f2911c, #f2911c);
   color: #fff;
   text-align: center;
   font-size: clamp(1.08rem, 1.2vw, 1.5rem);
@@ -2046,7 +2046,7 @@ footer .footer-bottom a:hover {
   min-height: 76px;
   padding: 18px 20px;
   border-radius: 16px;
-  background: #43B549;
+  background: #f2911c;
   color: #fff;
   font-size: clamp(1.25rem, 1.8vw, 2.05rem);
   line-height: 1.2;
