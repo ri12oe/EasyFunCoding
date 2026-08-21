@@ -16,6 +16,28 @@
     border-bottom: 2px solid $primary-color;
     letter-spacing: 0.08em;
   }
+  .overview-types {
+    display: block;
+    width: 100%;
+    margin: 0 0 18px;
+    font-weight: 600;
+    font-size: clamp(2.25rem, 4vw, 4.5rem);
+    line-height: 1.1;
+    color: $primary-color;
+    text-align: center;
+    .beginner-color {
+        color: $green-color;
+    }
+    .intermediate-color {
+        color: $yellow-color;
+    }
+    .advanced-color {
+        color: $secondary-color;
+    }
+    .competition-color {
+        color: $red-color;
+    }
+  }
 }
 
 .overview-content-wrapper {

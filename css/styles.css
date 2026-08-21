@@ -1360,6 +1360,28 @@ footer .footer-bottom a:hover {
   border-bottom: 2px solid #4862ad;
   letter-spacing: 0.08em;
 }
+.overview .overview-types {
+  display: block;
+  width: 100%;
+  margin: 0 0 18px;
+  font-weight: 600;
+  font-size: clamp(2.25rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  color: #4862ad;
+  text-align: center;
+}
+.overview .overview-types .beginner-color {
+  color: #43B549;
+}
+.overview .overview-types .intermediate-color {
+  color: #FBCD08;
+}
+.overview .overview-types .advanced-color {
+  color: #f2911c;
+}
+.overview .overview-types .competition-color {
+  color: #DB2D2C;
+}
 
 .overview-content-wrapper {
   background-color: #43B549;
