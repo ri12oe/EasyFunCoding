@@ -1007,6 +1007,9 @@ footer .footer-bottom a:hover {
   width: 100%;
   margin: 0 0 24px;
   text-align: center;
+  border-bottom: 1px solid #E7E5E4;
+  width: fit-content;
+  padding: 5px;
 }
 .about-us-wrapper .about-us-content .founder-content {
   width: min(100%, 1200px);
@@ -1052,8 +1055,6 @@ footer .footer-bottom a:hover {
   font-weight: 600;
   line-height: 1.2;
   color: #4862ad;
-  border-bottom: 1px solid #4862ad;
-  width: fit-content;
 }
 .about-us-wrapper .about-us-content .founder-content .founder-container .founder-subcontent .founder-descp {
   margin: 0;
@@ -1089,6 +1090,9 @@ footer .footer-bottom a:hover {
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 0.12em;
+  border-bottom: 1px solid #4862ad;
+  width: fit-content;
+  padding: 12px;
 }
 .instructor .instructor-content .instructor-cards {
   width: min(100%, 1200px);
