@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1342,7 +1343,7 @@ footer .footer-bottom a:hover {
   justify-content: center;
   align-items: center;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .overview .overview-title {
   font-weight: 700;
@@ -1352,20 +1353,22 @@ footer .footer-bottom a:hover {
   text-transform: uppercase;
   color: #4862ad;
   display: block;
-  width: 100%;
-  margin: 0 0 24px;
-  text-align: center;
-  border-bottom: 1px solid #4862ad;
   width: fit-content;
-  padding: 5px;
+  margin: 0 0 24px;
+  padding: 6px 18px;
+  text-align: center;
+  border-bottom: 2px solid #4862ad;
+  letter-spacing: 0.08em;
 }
 
 .overview-content-wrapper {
   background-color: #43B549;
+  padding: 24px 24px 80px;
 }
 .overview-content-wrapper .overview-item {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding-top: 32px;
 }
 .overview-content-wrapper .overview-item .overview-mintitle {
   display: block;
@@ -1380,31 +1383,230 @@ footer .footer-bottom a:hover {
 .overview-content-wrapper .overview-item .overview-cards {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding-top: 80px;
+  gap: 32px;
+  padding-top: 24px;
 }
 .overview-content-wrapper .overview-item .overview-cards .overview-card {
-  background-color: #E7E5E4;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 426px;
-  align-items: stretch;
-  width: 100%;
-  max-width: 1056px;
-  min-height: 396px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.05fr);
+  width: min(1180px, 100%);
+  min-height: 560px;
   margin: 0 auto;
-  border-radius: 14px;
+  background-color: white;
+  border-radius: 24px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(10, 32, 56, 0.08);
 }
 .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-img {
   background-image: url(../images/beginner-lv1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 600px;
-  border-radius: 10px;
+  min-height: 420px;
+  height: 100%;
+  transform: scale(0.96);
+  transform-origin: center;
+  border-radius: 18px;
+  margin: 14px 0 14px 14px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent {
+  padding: 32px 46px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent > * {
+  margin-bottom: 0;
 }
 .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent svg {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-level {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background-color: #43B549;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #E7E5E4;
+  font-size: 14px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-subtitle {
+  margin-bottom: 8px;
+  color: #43B549;
+  font-size: clamp(2.6rem, 3.2vw, 4rem);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-age {
+  margin-bottom: 22px;
+  color: rgba(25, 40, 66, 0.85);
+  font-size: clamp(1rem, 1.4vw, 1.6rem);
+  line-height: 1.3;
+  font-weight: 400;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons .overview-outline-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 12px 16px;
+  border: 2px solid #43B549;
+  border-radius: 14px;
+  background: #fff;
+  color: #43B549;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons .overview-outline-button svg {
+  width: 22px;
+  height: 22px;
+  fill: #43B549;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons .overview-outline-button .btn-content {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-build-title,
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-skill-title {
+  margin-bottom: 14px;
+  color: #43B549;
+  font-size: clamp(1.55rem, 2vw, 2.2rem);
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list {
+  margin-bottom: 20px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list li {
+  margin: 0;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-iteam-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: #43B549;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-list .build-text {
+  color: rgba(29, 42, 93, 0.96);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .skill-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+  margin-top: 4px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .skill-buttons .skill-fill-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 92px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #43B549, #2e86c9);
+  color: #fff;
+  text-align: center;
+  font-size: clamp(1.08rem, 1.2vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-primary-buttons {
+  margin-top: 6px;
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 76px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #43B549;
+  color: #fff;
+  font-size: clamp(1.25rem, 1.8vw, 2.05rem);
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
+}
+.overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-primary-button::after {
+  content: "↗";
+  margin-left: 12px;
+  font-size: 1.6em;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .overview-content-wrapper {
+    padding-inline: 18px;
+  }
+  .overview-content-wrapper .overview-card {
+    grid-template-columns: 1fr;
+  }
+  .overview-content-wrapper .overview-card .overview-img {
+    min-height: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .overview {
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+  .overview-content-wrapper {
+    padding-bottom: 52px;
+  }
+  .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent {
+    padding: 24px 20px 24px;
+  }
+  .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-buttons,
+  .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .skill-buttons {
+    grid-template-columns: 1fr;
+  }
+  .overview-content-wrapper .overview-item .overview-cards .overview-card .overview-subcontent .overview-primary-button {
+    min-height: 64px;
+    font-size: 1.2rem;
+  }
 }
