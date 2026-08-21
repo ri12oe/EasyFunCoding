@@ -54,11 +54,11 @@
     text-align: center;
     letter-spacing: 0.08em;
     a {
-        text-decoration: none;
-        color: $primary-color;
-        &:hover {
-            opacity: 0.7;
-        }
+      text-decoration: none;
+      color: $primary-color;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
@@ -309,14 +309,8 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
 
-            &::after {
-              content: "↗";
-              margin-left: 12px;
-              font-size: 1.6em;
-              line-height: 1;
-            }
             &:hover {
-                opacity: 0.7;
+              opacity: 0.7;
             }
           }
         }
@@ -582,14 +576,8 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
 
-            &::after {
-              content: "↗";
-              margin-left: 12px;
-              font-size: 1.6em;
-              line-height: 1;
-            }
             &:hover {
-                opacity: 0.7;
+              opacity: 0.7;
             }
           }
         }
@@ -859,14 +847,8 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
 
-            &::after {
-              content: "↗";
-              margin-left: 12px;
-              font-size: 1.6em;
-              line-height: 1;
-            }
             &:hover {
-                opacity: 0.7;
+              opacity: 0.7;
             }
           }
         }
@@ -1108,14 +1090,8 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
 
-            &::after {
-              content: "↗";
-              margin-left: 12px;
-              font-size: 1.6em;
-              line-height: 1;
-            }
             &:hover {
-                opacity: 0.7;
+              opacity: 0.7;
             }
           }
         }
@@ -1362,14 +1338,8 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(24, 53, 110, 0.2);
 
-            &::after {
-              content: "↗";
-              margin-left: 12px;
-              font-size: 1.6em;
-              line-height: 1;
-            }
             &:hover {
-                opacity: 0.7;
+              opacity: 0.7;
             }
           }
         }
