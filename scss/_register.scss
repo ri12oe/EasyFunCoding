@@ -1,0 +1,56 @@
+.register-callout-wrapper {
+  background-color: $primary-color;
+  .register-callout {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: red;
+    .callout-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 520px;
+      min-height: 400px;
+      .register-left {
+        background-color: white;
+        padding: 24px;
+        .register-callout-button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+          margin-bottom: 18px;
+          padding: 10px 22px;
+          border-radius: 999px;
+          background-color: $primary-color;
+          @include subtitle($white-color);
+          font-size: 14px;
+        }
+        .callout-title {
+          margin-bottom: 8px;
+          color: $primary-color;
+          font-size: clamp(2.6rem, 3.2vw, 4rem);
+          line-height: 0.98;
+          font-weight: 800;
+          letter-spacing: -0.06em;
+          margin-bottom: 24px;
+        }
+        .callout-descp {
+            color: $primary-color;
+            font-size: 1.15rem;
+            line-height: 1.45;
+            font-weight: 500;
+        }
+        .types-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+            .type-button {
+                @include primary-button($primary-color);
+                
+            }
+        }
+      }
+    }
+  }
+}

@@ -2970,3 +2970,71 @@ footer .footer-bottom a:hover {
     font-size: 1.05rem;
   }
 }
+.register-callout-wrapper {
+  background-color: #4862ad;
+}
+.register-callout-wrapper .register-callout {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: red;
+}
+.register-callout-wrapper .register-callout .callout-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+  min-height: 400px;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left {
+  background-color: white;
+  padding: 24px;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left .register-callout-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background-color: #4862ad;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #E7E5E4;
+  font-size: 14px;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left .callout-title {
+  margin-bottom: 8px;
+  color: #4862ad;
+  font-size: clamp(2.6rem, 3.2vw, 4rem);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  margin-bottom: 24px;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left .callout-descp {
+  color: #4862ad;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left .types-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.register-callout-wrapper .register-callout .callout-content .register-left .types-buttons .type-button {
+  background-color: #4862ad;
+  color: white !important;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.31px;
+  text-decoration: none;
+}
