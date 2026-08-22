@@ -8,7 +8,7 @@ A moderen, engaging redesign of the original https://easyfuncoding.com/ website,
 
 Original: https://easyfuncoding.com/ <br>
 
-New (So far): https://in-info-web4.luddy.indianapolis.iu.edu/~maespin/projects/EasyFunCoding/index.html
+New (So far): https://in-info-web4.luddy.indianapolis.iu.edu/~maespin/projects/EasyFunCoding/
 
 ## Updates
 I’ve finished building the new Overview page, featuring all courses and our Summer Camp, along with a refreshed About Us page. Both pages now give families a clear, welcoming introduction to EasyFunCoding and what we offer.
